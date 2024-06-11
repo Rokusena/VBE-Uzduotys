@@ -1,4 +1,9 @@
 ```C++
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <cmath>
+
 int Didziausias(Triuksmas a[], int n)
 {
     int did = a[0].db;
@@ -38,6 +43,16 @@ void iterpimas(int &n,int a[],int k,int nauja)
     n++;
     a[k] = nauja;
 }
+ ifstream fin("U1.txt");
+fin.close();
+fd.ignore(80, '\n');
+
+        char temp[11];
+        fd.get(temp,11);
+        A[i] = temp;
+
+ while(!fin.eof())
+      getline(cin,a);
 
 
 
